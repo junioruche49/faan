@@ -5,7 +5,8 @@
 
 <style>
     .menu-box:hover .menu{
-        font-weight: normal;
+        transform: scale(1.05);
+        transition: all .5s;
     }
     .pointer{
         cursor: pointer;
@@ -35,7 +36,7 @@
                                                     <h3>Sample Home Name</h3>
                                                 </div>
                                                 <div class="col-md-2 text-right">
-                                                    <h4 class="text-danger bold">
+                                                    <h4 class="text-danger bold pr-3">
                                                         79
                                                         <small>Residents</small>
                                                     </h4>
@@ -50,14 +51,39 @@
 
                                 <div class="container-fluid container-fixed-lg">
                                     <div class="row">
-                                        <?php for($i=0;$i<6;$i++){ ?>
                                         <div class="col-md-3 text-center my-3 pointer">
                                             <a href="forms/manageResident.php" class="menu-box">
                                                 <img class="w-50" src="assets/img/icons/search.png" />
                                                 <h5 class="menu">Search Residents</h5>
                                             </a>
                                         </div>
-                                        <?php } ?>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-3 text-center my-3 pointer">
+                                            <a href="forms/manageResident.php" class="menu-box">
+                                                <img class="w-50" src="assets/img/icons/residentprofile.png" />
+                                                <h5 class="menu">Manage Residents</h5>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 text-center my-3 pointer">
+                                            <a href="forms/manageResident.php" class="menu-box">
+                                                <img class="w-50" src="assets/img/icons/emergencyContacts.png" />
+                                                <h5 class="menu">Emergency Resident Details</h5>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 text-center my-3 pointer">
+                                            <a href="forms/manageResident.php" class="menu-box">
+                                                <img class="w-50" src="assets/img/icons/progress.png" />
+                                                <h5 class="menu">Progress Notes</h5>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 text-center my-3 pointer">
+                                            <a href="forms/manageResident.php" class="menu-box">
+                                                <img class="w-50" src="assets/img/icons/assessment.png" />
+                                                <h5 class="menu">Assessments</h5>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

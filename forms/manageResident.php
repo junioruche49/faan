@@ -4,10 +4,12 @@
 <?php include("../_partials/sidebar.php") ?>
 
 <style>
-    .home-box{
-        height: 250px;
-        background: center center no-repeat;
-        background-size: cover;
+    .form-tabs .nav-link{
+        font-size: 1rem;
+    }
+    .modal-xlg{
+        width: 900px !important;
+        max-width: 1000px !important;
     }
 </style>
 
@@ -26,11 +28,11 @@
                         <!-- <div class="inner"> -->
                             <div class="row align-items-center">
                                 <div class="col-md-8">
-                                    <h3>Pronvice Homes</h3>
+                                    <h3>Manage Residents</h3>
                                 </div>
                                 <div class="col-md-2 text-right">
-                                    <h4 class="text-danger bold">
-                                        4318
+                                    <h4 class="text-danger bold pr-3">
+                                        31
                                         <small>Residents</small>
                                     </h4>
                                 </div>
@@ -45,57 +47,98 @@
                 <!-- START CONTAINER FLUID -->
                 <div class="container-fluid container-fixed-lg">
                 <!-- BEGIN PlACE PAGE CONTENT HERE -->
-
-                    <?php foreach(["Alberta", "Manitoba", "Ontario"] as $place){ ?>
-                    <div class="row mb-5">
-                        <div class="col-md-12">
-                            <h2><?php echo $place ?></h5>
-                            <hr />
+                    <div class="row">
+                        <div class="col-md-12 py-4 text-right">
+                            <button class="btn btn-lg btn-primary" data-toggle="modal" data-target="#newResidentModal">Add a new Resident</button>
                         </div>
-
-                        <?php for($i=1;$i<= 6;$i++){ ?>
-                        <div class="col-md-3 mb-3">
-                            <div class="card no-border  no-margin">
-                                <div class="padding-15">
-                                    <div class="item-header clearfix">
-                                        <div class="inline m-l-10">
-                                            <p class="no-margin">
-                                                <strong>Summer Village Residents</strong>
-                                            </p>
-                                            <p class="no-margin hint-text">
-                                                <span class="location semi-bold">
-                                                    <i class="fa fa-map-marker"></i>
-                                                    23 Sample street, sample town
-                                                </span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="relative">
-                                    <div class="no-overflow home-box" style="background-image: url('<?php echo url('assets/img/residents/resident'.$i.'.jpg'); ?> ')">
-                                        <!-- <img src="assets/img/residents/resident<?php echo $i ?>.jpg" class="block center-margin relative w-100" alt="Post"> -->
-                                    </div>
-                                </div>
-                                <div class="padding-15">
-                                    <div class="list-inline pull-left no-margin">
-                                        <a href="menu.php">Open</a>
-                                    </div>
-                                    <div class="list-inline pull-right no-margin">
-                                        <div class="badge badge-danger fs-14 px-3">122/306</div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <?php } ?>
-
                     </div>
-                    <?php } ?>
+
+                    <div class="card">
+                        <div class="card-block">
+                            <table class="table">
+                                <thead class="bg-primary">
+                                    <tr>
+                                        <th class="text-white">First Name</th>
+                                        <th class="text-white">Last Name</th>
+                                        <th class="text-white">Suite No</th>
+                                        <th class="text-white">Emergency Contact</th>
+                                        <th class="text-white">Physician</th>
+                                        <th class="text-white"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php for($i=0;$i<8;$i++){
+                                        ?>
+                                    <tr>
+                                        <td class="align-middle">Sample First Name</td>
+                                        <td class="align-middle">Sample Last Name</td>
+                                        <td class="align-middle">45</td>
+                                        <td class="align-middle">Hannah Sommerville</td>
+                                        <td class="align-middle">Dr. Smith (4164444444)</td>
+                                        <td class="align-middle text-right">
+                                            <button class="btn btn-default btn-xs">
+                                                <i class="fa fa-pencil"></i>
+                                            </button>
+                                            <button class="btn btn-default btn-xs">
+                                                <i class="fa fa-file-text-o"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                    } ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
                 
                 <!-- END PLACE PAGE CONTENT HERE -->
                 </div>
                 <!-- END CONTAINER FLUID -->
             </div>
             <!-- END PAGE CONTENT -->
+
+            <!-- New Resident Modal -->
+            <div class="modal fade" id="newResidentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xlg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">New Resident Form</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-tabs mt-4">
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">General Info</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Emergency Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Medical Info</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-other" role="tab" aria-controls="pills-contact" aria-selected="false">Other</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">First</div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Second</div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Third</div>
+                                    <div class="tab-pane fade" id="pills-other" role="tabpanel" aria-labelledby="pills-contact-tab">Fourth</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Add Resident</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     <?php include("../_partials/footer.php") ?>

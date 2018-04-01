@@ -29,7 +29,7 @@
                                     <h3>Pronvice Homes</h3>
                                 </div>
                                 <div class="col-md-2 text-right">
-                                    <h4 class="text-danger bold">
+                                    <h4 class="text-danger bold pr-3">
                                         4318
                                         <small>Residents</small>
                                     </h4>
