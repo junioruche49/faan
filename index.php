@@ -60,7 +60,7 @@
                 <p class="p-t-35">Sign into your pages account</p>
             
                 <!-- START Login Form -->
-                <form id="form-login" class="p-t-15" role="form" action="index.html">
+                <form id="form-login" class="p-t-15" role="form" action="homes.php" method="POST">
                     <!-- START Form Control-->
                     <div class="form-group form-group-default">
                         <label>Login</label>
