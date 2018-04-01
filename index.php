@@ -1,3 +1,4 @@
+<?php require_once('config.php') ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,15 +16,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta content="" name="description" />
     <meta content="" name="author" />
-    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
-    <!-- <link class="main-stylesheet" href="pages/css/themes/corporate.css" rel="stylesheet" type="text/css" /> -->
-    <link class="main-stylesheet" href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo url('assets/plugins/pace/pace-theme-flash.css'); ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo url('assets/plugins/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo url('assets/plugins/font-awesome/css/font-awesome.css'); ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo url('assets/plugins/jquery-scrollbar/jquery.scrollbar.css'); ?>" rel="stylesheet" type="text/css" media="screen" />
+    <link href="<?php echo url('assets/plugins/select2/css/select2.min.css'); ?>" rel="stylesheet" type="text/css" media="screen" />
+    <link href="<?php echo url('assets/plugins/switchery/css/switchery.min.css'); ?>" rel="stylesheet" type="text/css" media="screen" />
+    <link href="<?php echo url('pages/css/pages-icons.css'); ?>" rel="stylesheet" type="text/css">
+    <!-- <link class="main-stylesheet" href="<?php echo url('pages/css/themes/corporate.css'); ?>" rel="stylesheet" type="text/css" /> -->
+    <link class="main-stylesheet" href="<?php echo url('assets/css/pages.css'); ?>" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
     window.onload = function()
     {
@@ -117,10 +118,10 @@
     </div>
     
     <!-- BEGIN VENDOR JS -->
-    <script src="assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/tether/js/tether.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="<?php echo url('assets/plugins/jquery/jquery-1.11.1.min.js') ?>" type="text/javascript"></script>
+    <script src="<?php echo url('assets/plugins/tether/js/tether.min.js') ?>" type="text/javascript"></script>
+    <script src="<?php echo url('assets/plugins/bootstrap/js/bootstrap.min.js') ?>" type="text/javascript"></script>
     <!-- END VENDOR JS -->
-    <script src="pages/js/pages.min.js"></script>
+    <script src="<?php echo url('pages/js/pages.min.js') ?>"></script>
   </body>
 </html>

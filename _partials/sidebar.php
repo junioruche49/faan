@@ -23,7 +23,7 @@
         <!-- BEGIN SIDEBAR MENU ITEMS-->
         <ul class="menu-items">
             <li class="m-t-30">
-                <a href="homes.php">
+                <a href="<?php echo url('homes.php') ?>">
                     <span class="title">Homes</span>
                 </a>
                 <span class="icon-thumbnail "><i class="pg-home"></i></span>

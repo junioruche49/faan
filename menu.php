@@ -1,12 +1,14 @@
-<?php $title = "Homes"; ?>
+<?php include("config.php") ?>
+<?php $title = "Sample home name"; ?>
 <?php include("_partials/header.php") ?>
 <?php include("_partials/sidebar.php") ?>
 
 <style>
-    .home-box{
-        height: 250px;
-        background: center center no-repeat;
-        background-size: cover;
+    .menu-box:hover .menu{
+        font-weight: normal;
+    }
+    .pointer{
+        cursor: pointer;
     }
 </style>
 
@@ -30,7 +32,7 @@
                                         <!-- <div class="inner"> -->
                                             <div class="row align-items-center">
                                                 <div class="col-md-8">
-                                                    <h3>Sample Home</h3>
+                                                    <h3>Sample Home Name</h3>
                                                 </div>
                                                 <div class="col-md-2 text-right">
                                                     <h4 class="text-danger bold">
@@ -48,33 +50,39 @@
 
                                 <div class="container-fluid container-fixed-lg">
                                     <div class="row">
-                                        <div class="col-md-2">
-                                            Hom
+                                        <?php for($i=0;$i<6;$i++){ ?>
+                                        <div class="col-md-3 text-center my-3 pointer">
+                                            <a href="forms/manageResident.php" class="menu-box">
+                                                <img class="w-50" src="assets/img/icons/search.png" />
+                                                <h5 class="menu">Search Residents</h5>
+                                            </a>
                                         </div>
+                                        <?php } ?>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-2 no-padding bg-white full-height">
                             <div style="height: 55px;"></div>
                             <div class="full-height">
                                 <h2 class="px-3">To do List</h2>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action pointer" data-toggle="modal" data-target="#todoModal">
                                         Dietry Updates
                                         <span class="badge badge-primary badge-pill pull-right">14</span>
                                     </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Dietry Updates
-                                        <span class="badge badge-primary badge-pill pull-right">14</span>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action pointer" data-toggle="modal" data-target="#todoModal">
+                                        Hospitalization
+                                        <span class="badge badge-primary badge-pill pull-right">3</span>
                                     </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Dietry Updates
-                                        <span class="badge badge-primary badge-pill pull-right">14</span>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action pointer" data-toggle="modal" data-target="#todoModal">
+                                        Initial Assessment
+                                        <span class="badge badge-primary badge-pill pull-right">68</span>
                                     </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        Dietry Updates
-                                        <span class="badge badge-primary badge-pill pull-right">14</span>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action pointer" data-toggle="modal" data-target="#todoModal">
+                                        Progress Notes
+                                        <span class="badge badge-primary badge-pill pull-right">30</span>
                                     </li>
                                 </ul>
                             </div>
@@ -84,5 +92,48 @@
                 </div>
             </div>
             <!-- END PAGE CONTENT -->
+            
+            <div class="modal fade" id="todoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Dietry Update</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>S/N</th>
+                                        <th>Suite no</th>
+                                        <th>Name</th>
+                                        <th>Assessed Date</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php for($i=1;$i<6;$i++){ ?>
+                                        <tr>
+                                            <td class="align-middle"><?php echo $i ?></td>
+                                            <td class="align-middle">102<?php echo $i ?></td>
+                                            <td class="align-middle">Gannesse, Kawdinski</td>
+                                            <td class="align-middle">05/11/2017</td>
+                                            <td>
+                                                <button class="btn btn-warning btn-xs">view</button>
+                                            </td>
+                                        </tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+                        </div>
+                </div>
+            </div>
 
     <?php include("_partials/footer.php") ?>

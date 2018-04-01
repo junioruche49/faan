@@ -1,7 +1,7 @@
-<?php include("config.php") ?>
-<?php $title = "Homes"; ?>
-<?php include("_partials/header.php") ?>
-<?php include("_partials/sidebar.php") ?>
+<?php include("../config.php") ?>
+<?php $title = "Manage Residents"; ?>
+<?php include("../_partials/header.php") ?>
+<?php include("../_partials/sidebar.php") ?>
 
 <style>
     .home-box{
@@ -14,7 +14,7 @@
     <!-- START PAGE-CONTAINER -->
     <div class="page-container">
         
-        <?php include("_partials/navHeader.php") ?>
+        <?php include("../_partials/navHeader.php") ?>
 
         <!-- START PAGE CONTENT WRAPPER -->
         <div class="page-content-wrapper">
@@ -72,7 +72,7 @@
                                     </div>
                                 </div>
                                 <div class="relative">
-                                    <div class="no-overflow home-box" style="background-image: url('assets/img/residents/resident<?php echo $i ?>.jpg')">
+                                    <div class="no-overflow home-box" style="background-image: url('<?php echo url('assets/img/residents/resident'.$i.'.jpg'); ?> ')">
                                         <!-- <img src="assets/img/residents/resident<?php echo $i ?>.jpg" class="block center-margin relative w-100" alt="Post"> -->
                                     </div>
                                 </div>
@@ -98,4 +98,4 @@
             </div>
             <!-- END PAGE CONTENT -->
 
-    <?php include("_partials/footer.php") ?>
+    <?php include("../_partials/footer.php") ?>
