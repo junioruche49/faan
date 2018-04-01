@@ -22,7 +22,8 @@
     <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
-    <link class="main-stylesheet" href="pages/css/themes/corporate.css" rel="stylesheet" type="text/css" />
+    <!-- <link class="main-stylesheet" href="pages/css/themes/corporate.css" rel="stylesheet" type="text/css" /> -->
+    <link class="main-stylesheet" href="assets/css/pages.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
     window.onload = function()
     {
@@ -97,7 +98,7 @@
                 <div class="pull-bottom sm-pull-bottom">
                     <div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">
                         <div class="col-sm-3 col-md-2 no-padding">
-                            <img alt="" class="m-t-5" data-src="assets/img/demo/pages_icon.png" data-src-retina="assets/img/demo/pages_icon_2x.png" height="60" src="assets/img/demo/pages_icon.png" width="60">
+                            <img alt="" class="m-t-5" data-src="assets/img/qola_logo.png" data-src-retina="assets/img/qola_logo_2x.png" height="60" src="assets/img/qola_logo.png" width="60">
                         </div>
                         <div class="col-sm-9 no-padding m-t-10">
                             <p>

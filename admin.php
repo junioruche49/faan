@@ -22,7 +22,8 @@
 	<link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
 
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
-    <link class="main-stylesheet" href="pages/css/themes/corporate.css" rel="stylesheet" type="text/css" />
+    <!-- <link class="main-stylesheet" href="pages/css/themes/corporate.css" rel="stylesheet" type="text/css" /> -->
+    <link class="main-stylesheet" href="assets/css/pages.css" rel="stylesheet" type="text/css" />
   </head>
   <body class="fixed-header menu-pin menu-behind"> 
     <!-- BEGIN SIDEBAR -->

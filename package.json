@@ -1,0 +1,11 @@
+{
+  "name": "qola",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "--watch pages/scss:assets/css"
+  },
+  "author": "",
+  "license": "ISC"
+}
