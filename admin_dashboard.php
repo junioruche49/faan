@@ -3,7 +3,7 @@
 <?php include("_partials/header.php") ?>
 <?php include("_partials/sidebar.php") ?>
 
-<style>
+<style> 
     .menu-box:hover .menu{
         transform: scale(1.05);
         transition: all .5s;
