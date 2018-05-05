@@ -7,7 +7,7 @@
         <!-- END MOBILE SIDEBAR TOGGLE -->
         <div class="">
           <div class="brand inline">
-            <img src="<?php echo url('assets/img/qola_logo.png') ?>" alt="qola_logo" data-src="<?php echo url('assets/img/qola_logo.png') ?>" data-src-retina="<?php echo url('assets/img/qola_logo.png') ?>" width="40" height="40">
+            <img src="<?php echo url('assets/img/faan_logo.png') ?>" alt="qola_logo" data-src="<?php echo url('assets/img/faan_logo.png') ?>" data-src-retina="<?php echo url('assets/img/faan_logo.png') ?>" width="80">
             <span>
                 <!-- <h2 class="d-inline-block mt-1">Qola</h2> -->
             </span>
@@ -28,8 +28,8 @@
           <!-- START User Info-->
           <div class="pull-left p-r-10 fs-14 font-heading hidden-md-down">
             Welcome
-            <span class="semi-bold">C.</span> 
-            <span class="text-master">Okwuokenye</span>
+            <span class="semi-bold">O.</span> 
+            <span class="text-master">Francis</span>
           </div>
           <div class="dropdown pull-right hidden-md-down">
             <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -38,6 +38,12 @@
     <script src="<?php echo url('assets/plugins/imagesloaded/imagesloaded.pkgd.min.js'); ?>"></script>
     <script src="<?php echo url('assets/plugins/jquery-actual/jquery.actual.min.js'); ?>"></script>
     <script src="<?php echo url('assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js'); ?>"></script>
+    <script src="<?php echo url('assets/js/tableExport.js'); ?>"></script>
+    <script src="<?php echo url('assets/js/jquery.base64.js'); ?>"></script>
+    <script src="<?php echo url('assets/js/html2canvas.js'); ?>"></script>
+    <script src="<?php echo url('assets/js/sprintf.js'); ?>"></script>
+    <script src="<?php echo url('assets/js/jspdf.js'); ?>"></script>
+    <script src="<?php echo url('assets/js/base64.js'); ?>"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN CORE TEMPLATE JS -->
     <script src="<?php echo url('pages/js/pages.js'); ?>" type="text/javascript"></script>
@@ -45,5 +51,12 @@
     <!-- BEGIN PAGE LEVEL JS -->
     <script src="<?php echo url('assets/js/scripts.js'); ?>" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS -->
+    <script type="text/javascript">
+      
+      onClick ="$('#tableID').tableExport({type:'pdf',escape:'false'});"
+      $("a.filter").click(function(){
+          $(".showfilter").toggle();
+      });
+    </script>
   </body>
 </html>

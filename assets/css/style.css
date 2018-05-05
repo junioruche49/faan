@@ -3,3 +3,26 @@
 * Override Pages default styles or create your own styles here
 
 */
+textarea{
+	width: 100% !important;
+	    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    padding: 10px;
+}
+.divcolor{
+
+	background: #14284f;
+}
+.divcolor h4{
+	color: #fff;
+	font-weight: 400;
+}
+.divborder{
+	border-right: 2px solid #fff;
+}
+.margin{
+	margin-bottom: 60px;
+}
+.marginbtm{
+	margin-bottom: 30px;
+}

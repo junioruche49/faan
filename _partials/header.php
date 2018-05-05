@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
     <title>
-        Qola 
+        FAAN 
         <?php if($title){ echo " - ".$title; } ?>
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -28,5 +28,6 @@
     <link href="<?php echo url('pages/css/pages-icons.css')?>" rel="stylesheet" type="text/css">
     <!-- <link class="main-stylesheet" href="pages/css/themes/corporate.css" rel="stylesheet" type="text/css" /> -->
     <link class="main-stylesheet" href="<?php echo url('assets/css/pages.css')?>" rel="stylesheet" type="text/css" />
+    <link class="main-stylesheet" href="<?php echo url('assets/css/style.css')?>" rel="stylesheet" type="text/css" />
   </head>
   <body class="fixed-header menu-pin menu-behind"> 

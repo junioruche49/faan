@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Qola - Login</title>
+    <title>FAAN - Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
     <link rel="apple-touch-icon" href="pages/ico/60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
@@ -25,6 +25,18 @@
     <link href="<?php echo url('pages/css/pages-icons.css'); ?>" rel="stylesheet" type="text/css">
     <!-- <link class="main-stylesheet" href="<?php echo url('pages/css/themes/corporate.css'); ?>" rel="stylesheet" type="text/css" /> -->
     <link class="main-stylesheet" href="<?php echo url('assets/css/pages.css'); ?>" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    .my-auto img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+    .top{
+        position: absolute !important;
+        top: 10%;
+    }
+    </style>
     <script type="text/javascript">
     window.onload = function()
     {
@@ -39,15 +51,22 @@
         <!-- START Login Background Pic Wrapper-->
         <div class="bg-pic">
             <!-- START Background Pic-->
-            <img src="assets/img/login_home.jpg" data-src="assets/img/login_home.jpg" data-src-retina="assets/img/login_home.jpg" alt="" class="lazy">
+            <img src="assets/img/01-copy-NXPowerLite-Copy.jpg" data-src="assets/img/01-copy-NXPowerLite-Copy.jpg" data-src-retina="assets/img/01-copy-NXPowerLite-Copy.jpg" alt="" class="lazy">
             <!-- END Background Pic-->
             <!-- START Background Caption-->
+            <div class="top text-white p-l-20 m-b-20">
+                <h1 class="semi-bold text-white">
+                    AIRPORT DATA ANALYSIS SYSTEM
+                </h1>
+            </div>
+
             <div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">
+
                 <h2 class="semi-bold text-white">
-                    Qola make it easy to enjoy what matters the most in the life
+                    FEDERAL AIRPORTS AUTHORITY OF NIGERIA
                 </h2>
                 <p class="small">
-                    Copyright © 2013-2018 Qola.
+                    Copyright © 2013-2018 FAAN.
                 </p>
             </div>
             <!-- END Background Caption-->
@@ -57,11 +76,11 @@
         <!-- START Login Right Container-->
         <div class="login-container bg-white">
             <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
-                <img src="assets/img/qola_logo.png" alt="logo" data-src="assets/img/qola_logo.png" data-src-retina="assets/img/qola_logo.png" width="78" height="78">
+                <img src="assets/img/faan_logo.png" alt="logo" data-src="assets/img/faan_logo.png" data-src-retina="assets/img/faan_logo.png" class="img-responsive">
                 <p class="p-t-35">Sign into your pages account</p>
             
                 <!-- START Login Form -->
-                <form id="form-login" class="p-t-15" role="form" action="homes.php" method="POST">
+                <form id="form-login" class="p-t-15" role="form" action="dashboard.php" method="POST">
                     <!-- START Form Control-->
                     <div class="form-group form-group-default">
                         <label>Login</label>
@@ -92,8 +111,9 @@
                         </div>
                     </div>
                     <!-- END Form Control-->
-                    <button class="btn btn-primary btn-cons m-t-10" type="submit">Sign in</button>
+                    <button class="btn btn-success btn-cons m-t-10" type="submit">Sign in</button>
                 </form>
+                
                 <!--END Login Form-->
 
                 <!-- <div class="pull-bottom sm-pull-bottom">
@@ -110,6 +130,9 @@
                 </div> -->
 
             </div>
+                <div class="my-auto">
+                    <img src="assets/img/415237-microsoft-azure-logo.jpg" class="img-responsive">
+                </div>
         </div>
         <!-- END Login Right Container-->
     </div>

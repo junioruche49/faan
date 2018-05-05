@@ -9,7 +9,7 @@
       <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
       <!-- BEGIN SIDEBAR MENU HEADER-->
       <div class="sidebar-header">
-        <img src="assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" data-src-retina="assets/img/logo_white_2x.png" width="78" height="22">
+        <img src="<?php echo url('assets/img/faan_logo.png') ?>" alt="logo" class="brand" data-src="<?php echo url('assets/img/faan_logo.png') ?>" data-src-retina="<?php echo url('assets/img/faan_logo.png') ?>" width="78" height="22">
         <div class="sidebar-header-controls">
           <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
           </button>
@@ -23,25 +23,24 @@
         <!-- BEGIN SIDEBAR MENU ITEMS-->
         <ul class="menu-items">
             <li class="m-t-30">
-                <a href="<?php echo url('homes.php') ?>">
-                    <span class="title">Homes</span>
+                <a href="<?php echo url('dashboard.php') ?>">
+                    <span class="title">Dashboard</span>
                 </a>
                 <span class="icon-thumbnail "><i class="pg-home"></i></span>
             </li>
             <li>
                 <a href="#" class="detailed">
-                    <span class="title">Page 1</span>
-                    <span class="details">234 notifications</span>
+                    <span class="title">Reports</span>
                 </a>
                 <span class="icon-thumbnail "><i class="pg-mail"></i></span>
             </li>
             <li class="">
                 <a href="#">
-                    <span class="title">Page 2</span>
+                    <span class="title">Settings</span>
                 </a>
                 <span class="icon-thumbnail "><i class="pg-social"></i></span>
             </li>
-            <li class="">
+            <!-- <li class="">
                 <a href="javascript:;">
                     <span class="title">Page 3</span>
                     <span class=" arrow"></span>
@@ -61,7 +60,7 @@
                         <span class="icon-thumbnail">sp</span>
                     </li>
                 </ul>
-            </li>
+            </li> -->
         </ul>
         <div class="clearfix"></div>
       </div>
